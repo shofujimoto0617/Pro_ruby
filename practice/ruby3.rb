@@ -99,8 +99,36 @@
 
 # puts BigDecimal(answer).floor
 
+# <<  -------------------------- >>
 
 
+# puts "うなりの周波数は2つの音の周波数のうち、大きい方の周波数から小さい方の周波数を引くことで計算できます。\n2つの音の周波数が入力されるので、うなりの周波数を計算して出力してください。"
 
+# puts "f1の周波数を入力してください"
 
+# while f1 = gets.to_i
+# 	if f1 < 100
+# 		puts "エラー(100 ≤ f1)"
+# 	else
+# 		break
+# 	end
+# end
+
+# puts "f2の周波数を入力してください"
+
+# while f2 = gets.to_i
+# 	if f2 == f1 || f2 > 1000
+# 		puts "エラー(f1 ≠ f2,f2 ≤ 1000)"
+# 	else
+# 		break
+# 	end
+# end
+
+# if f1 > f2
+# 	answer = f1 - f2
+# 	puts answer
+# else
+# 	answer = f2 - f1
+# 	puts answer
+# end
 
