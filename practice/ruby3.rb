@@ -38,41 +38,67 @@
 # 	print "\n"
 # end
 
-puts "歩数が1万歩以上であればyes/1万歩より少なければno"
-puts "計算しますので歩いた距離/歩幅を入力してください"
+# <<  -------------------------- >>
 
-km = []
-cm = []
+# puts "歩数が1万歩以上であればyes/1万歩より少なければno"
+# puts "計算しますので歩いた距離/歩幅を入力してください"
 
-puts '歩いた距離を入力してください'
+# km = []
+# cm = []
 
-while d = gets.to_i
-	if d == 0 || d > 20
-		puts "0以上20未満（条件）"
-	else
-		break km << d
-	end
-end
+# puts '歩いた距離を入力してください'
 
-puts '歩幅を入力してください'
+# while d = gets.to_i
+# 	if d == 0 || d > 20
+# 		puts "0以上20未満（条件）"
+# 	else
+# 		break km << d
+# 	end
+# end
 
-while s = gets.to_i
-	if s < 30 || s > 100
-		puts "30以上100未満（条件）"
-	else
-		break cm << s
-	end
-end
+# puts '歩幅を入力してください'
 
-change_cm = d * 100000
+# while s = gets.to_i
+# 	if s < 30 || s > 100
+# 		puts "30以上100未満（条件）"
+# 	else
+# 		break cm << s
+# 	end
+# end
 
-my_step = change_cm / s
+# change_cm = d * 100000
 
-if my_step >= 10000
-	puts "Yes"
-else
-	puts "No"
-end
+# my_step = change_cm / s
+
+# if my_step >= 10000
+# 	puts "Yes"
+# else
+# 	puts "No"
+# end
+
+# <<  -------------------------- >>
+
+# require 'bigdecimal'
+
+# puts "正n角形の１つの内角を計算します"
+
+# puts "nを入力してください"
+
+
+# while n = gets.to_i
+# 	if n < 3 || n > 15
+# 		puts "エラー(3 ≤ n ≤ 15)"
+# 	else
+# 		break
+# 	end
+# end
+
+
+# total = 180 * (n - 2)
+# answer = total / n
+
+# puts BigDecimal(answer).floor
+
 
 
 
