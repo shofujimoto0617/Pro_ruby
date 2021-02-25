@@ -147,17 +147,34 @@
 
 # <<  -------------------------- >>
 
-puts "入力された値にアンダーラインを表示"
+# puts "入力された値にアンダーラインを表示"
 
-puts "文字列を入力してください"
+# puts "文字列を入力してください"
 
-ander = "^"
+# ander = "^"
 
-while s = gets
-	if s.length < 1 || s.length > 20
-		puts "エラー(1 ≤ (sの長さ) ≤ 20)"
+# while s = gets
+# 	if s.length < 1 || s.length > 20
+# 		puts "エラー(1 ≤ (sの長さ) ≤ 20)"
+# 	else
+# 		break puts ander * (s.length - 1)
+# 	end
+# end
+
+
+# <<  -------------------------- >>
+
+pen = ["6B", "5B", "4B", "3B", "2B", "B", "HB", "F", "H", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H"]
+
+while k = gets.to_i
+	if k < 1 || k >17
+		puts "エラー(1 ≤ k ≤ 17)"
 	else
-		break puts ander * (s.length - 1)
+		break puts (pen[k - 1])
 	end
 end
+
+
+
+
 
