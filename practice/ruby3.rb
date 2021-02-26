@@ -164,13 +164,60 @@
 
 # <<  -------------------------- >>
 
-pen = ["6B", "5B", "4B", "3B", "2B", "B", "HB", "F", "H", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H"]
+# pen = ["6B", "5B", "4B", "3B", "2B", "B", "HB", "F", "H", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H"]
 
-while k = gets.to_i
-	if k < 1 || k >17
-		puts "エラー(1 ≤ k ≤ 17)"
+# while k = gets.to_i
+# 	if k < 1 || k >17
+# 		puts "エラー(1 ≤ k ≤ 17)"
+# 	else
+# 		break puts (pen[k - 1])
+# 	end
+# end
+
+
+# <<  -------------------------- >>
+
+# puts "靴のサイズをcmからUS/UKのサイズに変換\nあなたの靴のサイズを入力してください"
+
+# while cm = gets.to_i
+# 	if cm < 24.0 || cm > 28.0
+# 		puts "エラー(24.0 ≤ s ≤ 28.0)"
+# 	else
+# 		us = cm - 18.0
+# 		uk = cm - 18.5
+# 		puts us, uk
+# 		break
+# 	end
+# end
+
+
+# <<  -------------------------- >>
+
+# puts "m人で二人三脚のように足を結んだとき、全体で「何脚」になるかを出力します"
+# puts "m人を入力してください"
+
+# while m = gets.to_i
+# 	if m < 2 || m > 100
+# 		puts "エラー(2 ≤ m ≤ 100)"
+# 	else
+# 		break puts a = m + 1
+# 	end
+# end
+
+
+# <<  -------------------------- >>
+
+puts "n回ボーダー柄のパターンを出力します\nn回を入力してください"
+
+bw = ["##########", ".........."]
+
+while n = gets.to_i
+	if n < 1 && n > 10
+		puts "エラー(1 ≤ n ≤ 10)"
 	else
-		break puts (pen[k - 1])
+		break for i in 1..n do
+			puts bw
+		end
 	end
 end
 
