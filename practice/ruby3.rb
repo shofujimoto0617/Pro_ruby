@@ -207,21 +207,57 @@
 
 # <<  -------------------------- >>
 
-puts "n回ボーダー柄のパターンを出力します\nn回を入力してください"
+# puts "n回ボーダー柄のパターンを出力します\nn回を入力してください"
 
-bw = ["##########", ".........."]
+# bw = ["##########", ".........."]
 
-while n = gets.to_i
-	if n < 1 && n > 10
-		puts "エラー(1 ≤ n ≤ 10)"
+# while n = gets.to_i
+# 	if n < 1 && n > 10
+# 		puts "エラー(1 ≤ n ≤ 10)"
+# 	else
+# 		break for i in 1..n do
+# 			puts bw
+# 		end
+# 	end
+# end
+
+
+# <<  -------------------------- >>
+
+# puts "入力した１つの英単語を縦書きに表示します\n単語を入力してください"
+
+# while n = gets
+# 	if n.length < 2 && n.length > 10
+# 		puts "エラー(2 ≤ (sの文字列長) ≤ 10)"
+# 	else
+# 		break puts n.chars
+# 	end
+# end
+
+# <<  -------------------------- >>
+
+# puts "山を英語で入力してください"
+
+
+# while s = gets
+# 	if s.length < 2 && s.length > 10
+# 		puts "エラー(2 ≤ (sの長さ) ≤ 10)"
+# 	else
+# 		break puts "Mt. " + s
+# 	end
+# end
+
+# <<  -------------------------- >>
+
+puts "140人　乗車定員の通勤電車の乗車率を計算します。\n乗車人数を入力してください"
+
+t = 140
+
+while n = gets.to_f
+	if n < 0 && n > 400
+		puts "エラー(0 ≤ n ≤ 400)"
 	else
-		break for i in 1..n do
-			puts bw
-		end
+		x = n / t * 100
+		break puts x.floor.to_s + "%"
 	end
 end
-
-
-
-
-
