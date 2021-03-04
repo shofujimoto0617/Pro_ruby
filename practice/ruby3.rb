@@ -207,21 +207,102 @@
 
 # <<  -------------------------- >>
 
-puts "n回ボーダー柄のパターンを出力します\nn回を入力してください"
+# puts "n回ボーダー柄のパターンを出力します\nn回を入力してください"
 
-bw = ["##########", ".........."]
+# bw = ["##########", ".........."]
 
-while n = gets.to_i
-	if n < 1 && n > 10
-		puts "エラー(1 ≤ n ≤ 10)"
-	else
-		break for i in 1..n do
-			puts bw
-		end
-	end
-end
+# while n = gets.to_i
+# 	if n < 1 && n > 10
+# 		puts "エラー(1 ≤ n ≤ 10)"
+# 	else
+# 		break for i in 1..n do
+# 			puts bw
+# 		end
+# 	end
+# end
 
 
+# <<  -------------------------- >>
 
+# puts "入力した１つの英単語を縦書きに表示します\n単語を入力してください"
+
+# while n = gets
+# 	if n.length < 2 && n.length > 10
+# 		puts "エラー(2 ≤ (sの文字列長) ≤ 10)"
+# 	else
+# 		break puts n.chars
+# 	end
+# end
+
+# <<  -------------------------- >>
+
+# puts "山を英語で入力してください"
+
+
+# while s = gets
+# 	if s.length < 2 && s.length > 10
+# 		puts "エラー(2 ≤ (sの長さ) ≤ 10)"
+# 	else
+# 		break puts "Mt. " + s
+# 	end
+# end
+
+# <<  -------------------------- >>
+
+# puts "140人　乗車定員の通勤電車の乗車率を計算します。\n乗車人数を入力してください"
+
+# t = 140
+
+# while n = gets.to_f
+# 	if n < 0 && n > 400
+# 		puts "エラー(0 ≤ n ≤ 400)"
+# 	else
+# 		x = n / t * 100
+# 		break puts x.floor.to_s + "%"
+# 	end
+# end
+
+# <<  -------------------------- >>
+
+# puts "0から9までを数えるカウンタを表示します\n0〜9を入力してください"
+
+# while n = gets.to_i
+# 	if n < 0 || n > 9
+# 		puts "エラー(0 ≤ n ≤ 9)"
+# 	else
+# 		break (0..9).each do |a|
+# 			puts ((n + a) % 10)
+# 		end
+# 	end
+# end
+
+# <<  -------------------------- >>
+
+# puts "昨日と今日の気温差を表示します"
+# puts "昨日の気温を入力してください"
+
+# while t1 = gets.to_i
+# 	if t1 < 0
+# 		puts "エラー(0 ≤ t1)"
+# 	else
+# 		break
+# 	end
+# end
+
+# puts "今日の気温を入力してください"
+
+# while t2 = gets.to_i
+# 	if t2 < 0 || t2 > 35
+# 		puts "エラー(0 ≤ t1,t2 ≤ 35)"
+# 	else
+# 		break
+# 	end
+# end
+
+# if t1 > t2
+# 	puts "+" + (t1 - t2).to_s + " ℃"
+# else
+# 	puts (t1 - t2).to_s + " ℃"
+# end
 
 
