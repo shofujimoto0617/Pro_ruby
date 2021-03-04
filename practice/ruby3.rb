@@ -264,15 +264,45 @@
 
 # <<  -------------------------- >>
 
-puts "0から9までを数えるカウンタを表示します\n0〜9を入力してください"
+# puts "0から9までを数えるカウンタを表示します\n0〜9を入力してください"
 
-while n = gets.to_i
-	if n < 0 || n > 9
-		puts "エラー(0 ≤ n ≤ 9)"
-	else
-		break (0..9).each do |a|
-			puts ((n + a) % 10)
-		end
-	end
-end
+# while n = gets.to_i
+# 	if n < 0 || n > 9
+# 		puts "エラー(0 ≤ n ≤ 9)"
+# 	else
+# 		break (0..9).each do |a|
+# 			puts ((n + a) % 10)
+# 		end
+# 	end
+# end
+
+# <<  -------------------------- >>
+
+# puts "昨日と今日の気温差を表示します"
+# puts "昨日の気温を入力してください"
+
+# while t1 = gets.to_i
+# 	if t1 < 0
+# 		puts "エラー(0 ≤ t1)"
+# 	else
+# 		break
+# 	end
+# end
+
+# puts "今日の気温を入力してください"
+
+# while t2 = gets.to_i
+# 	if t2 < 0 || t2 > 35
+# 		puts "エラー(0 ≤ t1,t2 ≤ 35)"
+# 	else
+# 		break
+# 	end
+# end
+
+# if t1 > t2
+# 	puts "+" + (t1 - t2).to_s + " ℃"
+# else
+# 	puts (t1 - t2).to_s + " ℃"
+# end
+
 
