@@ -249,15 +249,30 @@
 
 # <<  -------------------------- >>
 
-puts "140人　乗車定員の通勤電車の乗車率を計算します。\n乗車人数を入力してください"
+# puts "140人　乗車定員の通勤電車の乗車率を計算します。\n乗車人数を入力してください"
 
-t = 140
+# t = 140
 
-while n = gets.to_f
-	if n < 0 && n > 400
-		puts "エラー(0 ≤ n ≤ 400)"
+# while n = gets.to_f
+# 	if n < 0 && n > 400
+# 		puts "エラー(0 ≤ n ≤ 400)"
+# 	else
+# 		x = n / t * 100
+# 		break puts x.floor.to_s + "%"
+# 	end
+# end
+
+# <<  -------------------------- >>
+
+puts "0から9までを数えるカウンタを表示します\n0〜9を入力してください"
+
+while n = gets.to_i
+	if n < 0 || n > 9
+		puts "エラー(0 ≤ n ≤ 9)"
 	else
-		x = n / t * 100
-		break puts x.floor.to_s + "%"
+		break (0..9).each do |a|
+			puts ((n + a) % 10)
+		end
 	end
 end
+
