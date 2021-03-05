@@ -305,4 +305,67 @@
 # 	puts (t1 - t2).to_s + " ℃"
 # end
 
+# <<  -------------------------- >>
+
+puts "A~Zのいずれかの1文字を入力してください"
+
+zero = ["C", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+one = ["A", "D", "O", "P", "Q", "R"]
+two = "B"
+
+s = gets.chomp
+
+if s.length == 1
+	if zero.include?(s)
+		puts "0"
+	elsif one.include?(s)
+		puts "1"
+	else 
+		puts "2"
+	end
+else
+	puts "エラー(A ~ Z のいずれかの1文字)"
+end
+
+# <<  -------------------------- >>
+
+# puts "騒音値は、デシベル（dB）という単位で表され、騒音値の大きさで、騒音の大きさが判断されます。\n騒音値を入力してください"
+
+# while l = gets.to_i
+# 	if l < 10 || l > 120
+# 		puts "エラー(10 ≤ l ≤ 120)"
+# 	elsif l < 30 
+# 		break puts "quiet"
+# 	elsif 30 <= l && l < 50
+# 		break puts "normal"
+# 	elsif 50 <= l && l < 70
+# 	    break puts "noisy"
+# 	else
+# 		break puts "very noisy"
+# 	end
+# end
+
+# <<  -------------------------- >>
+
+# puts "曜日を入力してください"
+
+# m = "Monday"
+# tu = "Tuesday"
+# w = "Wednesday"
+# th = "Thursday"
+# f = "Friday"
+
+# while s = gets.chomp
+# 	if s == m || s == tu || s == w || s == th
+# 		break puts "Still " + s
+# 	elsif s == f
+# 		break puts "TGIF"
+# 	else
+# 		puts "エラー(Monday, Tuesday, Wednesday, Thursday, Friday のいずれか)"
+# 	end
+# end
+		
+
+		
+
 
