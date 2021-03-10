@@ -307,25 +307,25 @@
 
 # <<  -------------------------- >>
 
-puts "A~Zのいずれかの1文字を入力してください"
+# puts "A~Zのいずれかの1文字を入力してください"
 
-zero = ["C", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-one = ["A", "D", "O", "P", "Q", "R"]
-two = "B"
+# zero = ["C", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+# one = ["A", "D", "O", "P", "Q", "R"]
+# two = "B"
 
-s = gets.chomp
+# s = gets.chomp
 
-if s.length == 1
-	if zero.include?(s)
-		puts "0"
-	elsif one.include?(s)
-		puts "1"
-	else 
-		puts "2"
-	end
-else
-	puts "エラー(A ~ Z のいずれかの1文字)"
-end
+# if s.length == 1
+# 	if zero.include?(s)
+# 		puts "0"
+# 	elsif one.include?(s)
+# 		puts "1"
+# 	else 
+# 		puts "2"
+# 	end
+# else
+# 	puts "エラー(A ~ Z のいずれかの1文字)"
+# end
 
 # <<  -------------------------- >>
 
@@ -367,5 +367,30 @@ end
 		
 
 		
+# <<  -------------------------- >>
 
+# while m = gets.to_i
+# 	if m < 0 || m > 100000
+# 		puts "エラー(0 ≤ m ≤ 100000)"
+# 	else
+# 		break puts m / 10
+# 	end
+# end
+
+
+# <<  -------------------------- >>
+
+puts "人が聞くことのできる周波数の範囲に入っているかどうかを判定します\n周波数を入力してください"
+
+while f = gets.to_i
+	if f < 10 || f > 40000
+		puts "エラー(10 ≤ f ≤ 40000)"
+	elsif f >= 20 && f <= 15000
+		break puts "yes"
+	elsif f > 1500 && f <= 20000
+		break puts "not sure"
+	else
+		break puts "no"
+	end
+end
 
