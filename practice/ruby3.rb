@@ -369,11 +369,28 @@
 		
 # <<  -------------------------- >>
 
-while m = gets.to_i
-	if m < 0 || m > 100000
-		puts "エラー(0 ≤ m ≤ 100000)"
+# while m = gets.to_i
+# 	if m < 0 || m > 100000
+# 		puts "エラー(0 ≤ m ≤ 100000)"
+# 	else
+# 		break puts m / 10
+# 	end
+# end
+
+
+# <<  -------------------------- >>
+
+puts "人が聞くことのできる周波数の範囲に入っているかどうかを判定します\n周波数を入力してください"
+
+while f = gets.to_i
+	if f < 10 || f > 40000
+		puts "エラー(10 ≤ f ≤ 40000)"
+	elsif f >= 20 && f <= 15000
+		break puts "yes"
+	elsif f > 1500 && f <= 20000
+		break puts "not sure"
 	else
-		break puts m / 10
+		break puts "no"
 	end
 end
 
