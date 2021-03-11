@@ -380,17 +380,71 @@
 
 # <<  -------------------------- >>
 
-puts "人が聞くことのできる周波数の範囲に入っているかどうかを判定します\n周波数を入力してください"
+# puts "人が聞くことのできる周波数の範囲に入っているかどうかを判定します\n周波数を入力してください"
 
-while f = gets.to_i
-	if f < 10 || f > 40000
-		puts "エラー(10 ≤ f ≤ 40000)"
-	elsif f >= 20 && f <= 15000
-		break puts "yes"
-	elsif f > 1500 && f <= 20000
-		break puts "not sure"
+# while f = gets.to_i
+# 	if f < 10 || f > 40000
+# 		puts "エラー(10 ≤ f ≤ 40000)"
+# 	elsif f >= 20 && f <= 15000
+# 		break puts "yes"
+# 	elsif f > 1500 && f <= 20000
+# 		break puts "not sure"
+# 	else
+# 		break puts "no"
+# 	end
+# end
+
+# <<  -------------------------- >>
+
+# line = "+"
+
+# while S = gets.chomp
+# 	if S.length < 1 || S.length > 100
+# 		puts "エラー(1 ≦ (S の長さ) ≦ 100)"
+# 	else
+# 		message = "+" + S + "+"
+# 		puts line * message.length
+# 		puts message
+# 		break puts line * message.length
+# 	end
+# end
+
+
+# <<  -------------------------- >>
+
+
+
+while m = gets.to_i
+	if m < 1 || m > 1000
+		puts "エラー(1 ≦ m ≦ 1000)"
 	else
-		break puts "no"
+		break
 	end
 end
+
+while p = gets.to_i
+	if p < 0
+		puts "エラー(0 ≦ p)"
+	else
+		break p = p / 100
+	end
+end
+
+while q = gets.to_i
+	if q > 100
+		puts "エラー(q ≦ 100)"
+	else
+		break q = q / 100
+	end
+end
+
+a = m * p
+b = m - a
+c = q * b
+puts d = b - c
+
+
+
+
+
 
